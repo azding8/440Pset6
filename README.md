@@ -4,7 +4,7 @@
 This repo contains the necessary R script and instructions to reproduce a mitochondrial content violin plot for 8 endometrium scRNA-seq samples which we aggregated together. Analysis was performed in R using Seurat v5 [1].
 
 ## Data
-scRNA-seq of endometrial samples were generated using Illumina 10xv3 Chemistry on a NovaSeq S4 and posted to the GEO database for public use.
+scRNA-seq of endometrial samples were generated using Illumina 10xv3 Chemistry on a NovaSeq S4 and posted to the GEO database for public use [2][3].
 
 Single cells were captured and barcoded using the 10X Chromium platform. ScRNA-seq libraries were prepared following the Chromium Single Cell 3' Reagent Kits User Guide (v2/v3). Gel Bead-In Emulsions were generated using single cell preparations. Libraries were quantified using Agilent Bioanalyzer High Sensitivity DNA chips and pooled together before sequencing on a NovaSeq S4.
 
@@ -24,7 +24,7 @@ GEO Samples used:
 
 Also see references section for citations.
 
-The data is also described in the meta data of the GSM page and in the csv located in the Data folder of this repository. The data being used are single-cell RNA sequencing samples from [2,3], studying the single-cell transcriptome in endometriosis. We are currently focusing on 8 samples split between 2 individuals (each individual with 2 endometrial samples and 2 control samples).
+The data is also described in the meta data of the GSM page and in the csv located in the Data folder of this repository. The data being used are single-cell RNA sequencing samples from [2][3], studying the single-cell transcriptome in endometriosis. We are currently focusing on 8 samples split between 2 individuals (each individual with 2 endometrial samples and 2 control samples).
 
 Data Characteristics in Short:
 - Tissue samples from female donors
