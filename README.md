@@ -44,17 +44,16 @@ Data Characteristics in Short:
 ## Installation
 How do I run your code?
 1. Download the required data files from the GEO database and unzip them
-2. Download the R script file (Endo_Analysis.R)
+2. Download the R script file (`Endo_Analysis.R`)
 3. Install R studio or some other means of running R code
-4. Modify the paths in Endo_Analysis.R to match your preferred local file structure
+4. Modify the paths in `Endo_Analysis.R` to match your preferred local file structure
 5. Run the code (make sure to install libraries which you are missing)
 What software and package versions do I need to install?
 
 Seurat Installation:
 
-`install.packages('Seurat')
-
-#enter 'y' if any warnings pop up`
+`install.packages('Seurat')`
+`#enter 'y' if any warnings pop up`
 
 splitstackshape Installation:
 
