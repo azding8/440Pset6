@@ -10,42 +10,36 @@ Single cells were captured and barcoded using the 10X Chromium platform. ScRNA-s
 
 GEO Asscession URL:
 https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE213216
+
 GEO Samples used:
 
-GSM6574518
-
-GSM6574519
-
-GSM6574520
-
-GSM6574521
-
-GSM6574528
-
-GSM6574529
-
-GSM6574530
-
-GSM6574531
+- GSM6574518
+- GSM6574519
+- GSM6574520
+- GSM6574521
+- GSM6574528
+- GSM6574529
+- GSM6574530
+- GSM6574531
 
 Also see references section for citations.
 
-The data is also described in the meta data of the GSM page and in the csv located in the Data folder of this repository.The data being used are single-cell RNA sequencing samples from [2,3], studying the single-cell transcriptome in endometriosis. We are currently focusing on 8 samples split between 2 individuals (each individual with 2 endometrial samples and 2 control samples).
+The data is also described in the meta data of the GSM page and in the csv located in the Data folder of this repository. The data being used are single-cell RNA sequencing samples from [2,3], studying the single-cell transcriptome in endometriosis. We are currently focusing on 8 samples split between 2 individuals (each individual with 2 endometrial samples and 2 control samples).
 
 Data Characteristics in Short:
--Tissue samples from female donors
--2 patients
--7 unique anatomical locations
--3 major classes (endometriosis, no endometriosis, eutopic endometrium)
+- Tissue samples from female donors
+- 2 patients
+- 7 unique anatomical locations
+- 3 major classes (endometriosis, no endometriosis, eutopic endometrium)
 
 ## Folder structure
-Cluster scripts folder: contains shell scripts used to download fastqs from Sequence Read Archive (SRA) and process them into spliced/unspliced count matrices. These files are relevant to our final project, but are not used to generate a figure for Pset 6.
+`Cluster_scripts` contains shell scripts used to download fastqs from Sequence Read Archive (SRA) and process them into spliced/unspliced count matrices. These files are relevant to our final project, but are not used to generate a figure for Pset 6.
 
-Data folder: contains a csv file with the GEO acession ids for the 8 samples used in the violin plot for Pset 6.
+`Data` contains a csv file with the GEO acession ids for the 8 samples used in the violin plot for Pset 6.
 
-Figures folder: contains a png of the mitochondrial violin plot figure for Pset 6.
+`Figures` contains a png of the mitochondrial violin plot figure for Pset 6.
 
-R_scripts folder: contains the R script used to generate the mitochondrial violin plot figure for Pset 6.
+`R_scripts` contains the R script used to generate the mitochondrial violin plot figure for Pset 6.
 
 ## Installation
 How do I run your code?
@@ -58,17 +52,17 @@ What software and package versions do I need to install?
 
 Seurat Installation:
 
-install.packages('Seurat')
+`install.packages('Seurat')
 
-#enter 'y' if any warnings pop up
+#enter 'y' if any warnings pop up`
 
 splitstackshape Installation:
 
-install.packages("splitstackshape")
+`install.packages("splitstackshape")`
 
 ggplot2 Installation:
 
-install.packages("ggplot2")
+`install.packages("ggplot2")`
 
 R version 4.2.1
 
