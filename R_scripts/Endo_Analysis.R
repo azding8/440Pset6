@@ -13,10 +13,10 @@ sce1<-Read10X("/Volumes/Extreme Pro/Endometrium scRNAseq Analysis/Data/sample14/
 sce2<-Read10X("/Volumes/Extreme Pro/Endometrium scRNAseq Analysis/Data/sample15/outs/filtered_feature_bc_matrix")
 sce3<-Read10X("/Volumes/Extreme Pro/Endometrium scRNAseq Analysis/Data/sample16/outs/filtered_feature_bc_matrix")
 sce4<-Read10X("/Volumes/Extreme Pro/Endometrium scRNAseq Analysis/Data/sample17/outs/filtered_feature_bc_matrix")
-sce5<-Read10X("/Volumes/Extreme Pro/Endometrium scRNAseq Analysis/Data/sample28/outs/filtered_feature_bc_matrix")
-sce6<-Read10X("/Volumes/Extreme Pro/Endometrium scRNAseq Analysis/Data/sample29/outs/filtered_feature_bc_matrix")
-sce7<-Read10X("/Volumes/Extreme Pro/Endometrium scRNAseq Analysis/Data/sample30/outs/filtered_feature_bc_matrix")
-sce8<-Read10X("/Volumes/Extreme Pro/Endometrium scRNAseq Analysis/Data/sample31/outs/filtered_feature_bc_matrix")
+sce5<-Read10X("/Volumes/Extreme Pro/Endometrium scRNAseq Analysis/Data/sample24/outs/filtered_feature_bc_matrix")
+sce6<-Read10X("/Volumes/Extreme Pro/Endometrium scRNAseq Analysis/Data/sample25/outs/filtered_feature_bc_matrix")
+sce7<-Read10X("/Volumes/Extreme Pro/Endometrium scRNAseq Analysis/Data/sample26/outs/filtered_feature_bc_matrix")
+sce8<-Read10X("/Volumes/Extreme Pro/Endometrium scRNAseq Analysis/Data/sample27/outs/filtered_feature_bc_matrix")
 
 sce1=CreateSeuratObject(counts = sce1)
 sce2=CreateSeuratObject(counts = sce2)
@@ -27,7 +27,7 @@ sce6=CreateSeuratObject(counts = sce6)
 sce7=CreateSeuratObject(counts = sce7)
 sce8=CreateSeuratObject(counts = sce8)
 
-sce.all <- merge(sce1, y = c(sce2,sce3,sce4,sce5,sce6,sce7,sce8), add.cell.ids = c("S14","S15","S16","S17","S28","S29","S30","S31"), project = "Endo")
+sce.all <- merge(sce1, y = c(sce2,sce3,sce4,sce5,sce6,sce7,sce8), add.cell.ids = c("S14","S15","S16","S17","S24","S25","S26","S27"), project = "Endo")
 
 head(sce.all@meta.data)
 
